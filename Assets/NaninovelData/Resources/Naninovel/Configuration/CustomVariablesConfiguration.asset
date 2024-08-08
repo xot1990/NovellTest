@@ -15,7 +15,11 @@ MonoBehaviour:
   PredefinedVariables:
   - name: G_Name
     value: '" "'
-  - name: G_CristianVisit
+  - name: CristianVisit
     value: false
   - name: G_MiniGame
+    value: false
+  - name: G_CurrenScript
+    value: '" "'
+  - name: CristianQuest
     value: false

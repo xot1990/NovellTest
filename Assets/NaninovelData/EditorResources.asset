@@ -147,6 +147,12 @@ MonoBehaviour:
     - name: Map
       pathPrefix: UI
       guid: 0a280e1fbc7c73c42b2f6fad5bce015a
+    - name: Cristian
+      pathPrefix: UI
+      guid: 07c883da0f9bf3a4f86834150234a9d0
+    - name: Pasta
+      pathPrefix: UI
+      guid: b3523476a3e7a1945b88fc06b44d0c82
   - Id: Backgrounds/1dc53fbc-f3ca-4e20-8a21-3dc539801849
     Resources:
     - name: StartBack
@@ -155,6 +161,9 @@ MonoBehaviour:
     - name: BackDoor
       pathPrefix: Backgrounds/MainBackground
       guid: 0ff3b07ee3263a943bd57cbff2b5e89b
+    - name: Map
+      pathPrefix: Backgrounds/MainBackground
+      guid: d90f67df9e14d0542afff23891eebfc9
   - Id: Audio
     Resources: []
   - Id: Scripts
@@ -165,6 +174,21 @@ MonoBehaviour:
     - name: CristianDialog
       pathPrefix: Scripts
       guid: f487951ea930ad34e95c4cd789a36639
+    - name: MiniGame
+      pathPrefix: Scripts
+      guid: d03bb5fad18392848834b9cd3bdcee54
+    - name: RunMiniGame
+      pathPrefix: Scripts
+      guid: 9514c9e208991074ab17de8703cc283b
+    - name: EndMiniGame
+      pathPrefix: Scripts
+      guid: 307ec05d2314f6b4ea428e819abcc124
+    - name: ShowMap
+      pathPrefix: Scripts
+      guid: 068ac0a41d360ab48a718676edbdb8b7
+    - name: HideMap
+      pathPrefix: Scripts
+      guid: 1dc5c0c1b053dcf42b6a0179696327fd
   - Id: Characters/c04e1682-8854-4bf5-b3b0-c7be6b29c997
     Resources:
     - name: Default

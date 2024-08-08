@@ -1,0 +1,9 @@
+
+@back Map
+
+@if CristianVisit
+
+@showUI Pasta
+@endIf
+@showUI Cristian
+@stop

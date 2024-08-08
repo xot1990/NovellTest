@@ -1,0 +1,9 @@
+
+
+
+
+@hideUI Map
+@hideUI Pasta
+@hideUI Cristian
+@goto {G_CurrentScript}.Continue
+@stop

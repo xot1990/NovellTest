@@ -10,4 +10,7 @@
 Будьте как дома {Name}
 Скажите, куда мне вас проводить?
 
-@showUI Map
+@char Lis visible:false
+
+@goto ShowMap
+@stop
