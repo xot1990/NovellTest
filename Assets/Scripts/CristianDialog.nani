@@ -1,0 +1,34 @@
+
+@hideUI Map
+@back BackDoor
+@if G_CristianVisit
+@goto .Visit
+@else
+@goto .DontVisit
+# DontVisit
+@char Cristian
+Хей! Псс... Друг, поможешь?
+
+@choice Да goto:.Да
+@choice Нет goto:.Нет
+@set CristianVisit=true
+@stop
+# Нет
+@goto .BackToMap
+# Да
+@char Cristian
+Оооо! Вот это хорошо!
+Я сегодня проспал обед...
+Стащи для меня порцию, по братци!
+Надеюсь на тебя!
+@goto .BackToMap
+@stop
+# Visit
+@if MiniGame
+@char Cristian
+Ты вернулся без еды...
+В тебе ни капли жалости... Видимо ты хочешь моей смерти...
+
+@goto .BackToMap
+# BackToMap
+@showUI Map

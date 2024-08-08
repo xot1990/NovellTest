@@ -144,17 +144,34 @@ MonoBehaviour:
     - name: ScriptNavigatorUI
       pathPrefix: UI
       guid: 735d6aa767879aa469134858c5b2f0a7
+    - name: Map
+      pathPrefix: UI
+      guid: 0a280e1fbc7c73c42b2f6fad5bce015a
   - Id: Backgrounds/1dc53fbc-f3ca-4e20-8a21-3dc539801849
-    Resources: []
+    Resources:
+    - name: StartBack
+      pathPrefix: Backgrounds/MainBackground
+      guid: 82704b18a6ec0834ebe82b1ccaec1283
+    - name: BackDoor
+      pathPrefix: Backgrounds/MainBackground
+      guid: 0ff3b07ee3263a943bd57cbff2b5e89b
   - Id: Audio
     Resources: []
   - Id: Scripts
     Resources:
-    - name: NewScript
+    - name: Start
       pathPrefix: Scripts
       guid: d4d0819ccb7c2d543a6713e14be75c79
+    - name: CristianDialog
+      pathPrefix: Scripts
+      guid: f487951ea930ad34e95c4cd789a36639
   - Id: Characters/c04e1682-8854-4bf5-b3b0-c7be6b29c997
     Resources:
     - name: Default
       pathPrefix: Characters/Lis
       guid: f0b025c33635071419707f98eee6a209
+  - Id: Characters/ae45a675-015c-44b6-9446-2f928bac1d22
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Cristian
+      guid: 924f256512a63eb49a2ae5f93672ed94

@@ -1,0 +1,13 @@
+
+@back StartBack
+@char Lis
+С прибытим в замок Графа!
+Представьтесь пожалуйста
+@input Name summary:"Введите имя"
+@stop
+
+@char Lis
+Будьте как дома {Name}
+Скажите, куда мне вас проводить?
+
+@showUI Map
