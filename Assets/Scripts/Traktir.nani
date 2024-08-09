@@ -3,6 +3,7 @@
 @goto HideMap
 # Continue
 @back Traktir time:0
+@showUI Map
 @if !Pasta
 @showUI PastaGame
 @else

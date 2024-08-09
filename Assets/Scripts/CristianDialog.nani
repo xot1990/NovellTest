@@ -30,11 +30,30 @@
 @goto ShowMap
 @stop
 # Visit
-@if !G_MiniGame
+@if !Pasta
 @char Cristian
 Ты вернулся без еды...
 В тебе ни капли жалости... Видимо ты хочешь моей смерти...
 @hideAll time:0
 
 @goto ShowMap
+@else
+@char Cristian
+Боже! Это же миска лапши!
+Она же для меня?
+@choice Да goto:.ДаЛапша
+@choice Нет goto:.НетЛапша
+@stop
 @endIf
+
+# ДаЛапша
+@char Cristian time:0
+Ты мой спаситель!
+Я тебя не забуду!
+@goto GameEnd
+# НетЛапша
+@char Cristian time:0
+Как?...
+Знай! Теперь тебе не будет покая в этом месте!
+
+@goto GameEnd

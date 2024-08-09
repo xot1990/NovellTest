@@ -1,0 +1,61 @@
+; Russian (Russia) <ru-RU> to English <en> localization document for `CristianDialog` naninovel script
+
+# ~d2654dc4
+; Хей! Псс... Друг, поможешь?
+Hey! Pss... Friend, can you help?
+
+# ~757819e3
+; Да
+Yes
+
+# ~bd70419c
+; Нет
+No
+
+# ~6daab532
+; Оооо! Вот это хорошо!
+Ooooh! This is good!
+
+# ~20a9a92e
+; Я сегодня проспал обед...
+I slept through lunch today...
+
+# ~bb8d56f5
+; Стащи для меня порцию, по братци!
+Steal a portion for me, brothers!
+
+# ~bf442ac8
+; Надеюсь на тебя!
+I'm counting on you!
+
+# ~bbafe040
+; Ты вернулся без еды...
+You came back without food...
+
+# ~8330c2cc
+; В тебе ни капли жалости... Видимо ты хочешь моей смерти...
+There is not a drop of pity in you... Apparently you want me dead...
+
+# ~637d4c17
+; Боже! Это же миска лапши!
+Oh my god! It's a bowl of noodles!
+
+# ~a64737cf
+; Она же для меня?
+It's for me, right?
+
+# ~e7e0987c
+; Ты мой спаситель!
+You are my savior!
+
+# ~cabee3a5
+; Я тебя не забуду!
+I will not forget you!
+
+# ~66490a71
+; Как?...
+How?...
+
+# ~c201cbe6
+; Знай! Теперь тебе не будет покая в этом месте!
+Know this! Now you will have no repentance in this place!

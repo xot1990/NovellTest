@@ -1,0 +1,1 @@
+; Russian (Russia) <ru-RU> to English <en> localization document for `HideMap` naninovel script

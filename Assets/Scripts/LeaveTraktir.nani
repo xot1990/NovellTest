@@ -1,0 +1,5 @@
+
+@hideUI Map
+@hideUI PastaGame
+@goto ShowMap
+@stop

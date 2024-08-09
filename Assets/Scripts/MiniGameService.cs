@@ -41,6 +41,13 @@ namespace Naninovel
             player.PreloadAndPlayAsync("EndMiniGame").Forget();
         }
 
+        public void SetGameResault(string variable, string value)
+        {
+            if (customVariableManager.VariableExists(variable))
+                customVariableManager.SetVariableValue(variable, value);
+            else Debug.Log("Variable " + variable + " dont exist");
+        }
+
 
         public void ResetService()
         {

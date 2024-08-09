@@ -1,0 +1,21 @@
+; Russian (Russia) <ru-RU> to English <en> localization document for `Start` naninovel script
+
+# ~12700fa
+; С прибытим в замок Графа!
+Welcome to the Count's castle!
+
+# ~fb39480f
+; Представьтесь пожалуйста
+Please introduce yourself.
+
+# ~7d31975e
+; Введите имя
+Enter your name
+
+# ~29290a58
+; Будьте как дома 
+Make yourself at home
+
+# ~4877addd
+; Скажите, куда мне вас проводить?
+Tell me, where should I take you?

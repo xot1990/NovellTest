@@ -198,6 +198,12 @@ MonoBehaviour:
     - name: Traktir
       pathPrefix: Scripts
       guid: 236d9616a0a19634293b2c83b1a49276
+    - name: LeaveTraktir
+      pathPrefix: Scripts
+      guid: 8dc6566b9039f8e4d9caa119da74eb83
+    - name: GameEnd
+      pathPrefix: Scripts
+      guid: 3d44e3c96f0929d4eb28a8f41ae04d77
   - Id: Characters/c04e1682-8854-4bf5-b3b0-c7be6b29c997
     Resources:
     - name: Default

@@ -98,12 +98,14 @@ namespace DTT.MinigameMemory.Demo
         private void Home()
         {
             MiniGameService _miniGameService = Engine.GetService<MiniGameService>();
+            _miniGameService.SetGameResault("Pasta", "true");
             _miniGameService.UnLoadMiniGame();
         }
 
         private void Back()
         {
             MiniGameService _miniGameService = Engine.GetService<MiniGameService>();
+            _miniGameService.SetGameResault("Pasta", "false");
             _miniGameService.UnLoadMiniGame();
         }
 
