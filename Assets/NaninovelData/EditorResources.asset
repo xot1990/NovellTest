@@ -153,6 +153,9 @@ MonoBehaviour:
     - name: Pasta
       pathPrefix: UI
       guid: b3523476a3e7a1945b88fc06b44d0c82
+    - name: PastaGame
+      pathPrefix: UI
+      guid: a39cbf0621628974b87dc7f82f82314e
   - Id: Backgrounds/1dc53fbc-f3ca-4e20-8a21-3dc539801849
     Resources:
     - name: StartBack
@@ -164,6 +167,9 @@ MonoBehaviour:
     - name: Map
       pathPrefix: Backgrounds/MainBackground
       guid: d90f67df9e14d0542afff23891eebfc9
+    - name: Traktir
+      pathPrefix: Backgrounds/MainBackground
+      guid: c34b5d75fea53c741a503c8d15047e28
   - Id: Audio
     Resources: []
   - Id: Scripts
@@ -189,6 +195,9 @@ MonoBehaviour:
     - name: HideMap
       pathPrefix: Scripts
       guid: 1dc5c0c1b053dcf42b6a0179696327fd
+    - name: Traktir
+      pathPrefix: Scripts
+      guid: 236d9616a0a19634293b2c83b1a49276
   - Id: Characters/c04e1682-8854-4bf5-b3b0-c7be6b29c997
     Resources:
     - name: Default

@@ -2,8 +2,8 @@
 
 
 
-@hideUI Map
-@hideUI Pasta
-@hideUI Cristian
+@hideUI Map time:0
+@hideUI Pasta time:0
+@hideUI Cristian time:0
 @goto {G_CurrentScript}.Continue
 @stop

@@ -23,3 +23,5 @@ MonoBehaviour:
     value: '" "'
   - name: CristianQuest
     value: false
+  - name: Pasta
+    value: false

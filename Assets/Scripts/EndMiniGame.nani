@@ -1,3 +1,4 @@
 
-@showUI Map
+@set Pasta="true"
+@goto Traktir
 @stop

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Naninovel;
 using UnityEngine.UI;
 using System.Text;
 using DTT.MinigameMemory;
@@ -10,6 +11,7 @@ namespace DTT.MinigameMemory.Demo
     /// </summary>
     public class MemoryUIManager : MonoBehaviour
     {
+        
         /// <summary>
         /// Used to get the state of the game.
         /// </summary>
@@ -45,10 +47,10 @@ namespace DTT.MinigameMemory.Demo
             _gameManager.Finish += SetFinisedMenuActive;
             
             _finishedMenu._homeButton.onClick.AddListener(Home);
-            _finishedMenu._restartButton.onClick.AddListener(Restart);
-            _pausedMenu._restartButton.onClick.AddListener(Restart);
-            _pausedMenu._homeButton.onClick.AddListener(Home);
-            _pausedMenu._resumeButton.onClick.AddListener(Resume);
+            _finishedMenu._restartButton.onClick.AddListener(Home);
+            _pausedMenu._restartButton.onClick.AddListener(Back);
+            _pausedMenu._homeButton.onClick.AddListener(Back);
+            _pausedMenu._resumeButton.onClick.AddListener(Back);
         }
 
         /// <summary>
@@ -95,9 +97,14 @@ namespace DTT.MinigameMemory.Demo
         /// </summary>
         private void Home()
         {
-            Hide();
-            _gameManager.Stop();
-            _levelSelectHandler.ShowLevelSelect();
+            MiniGameService _miniGameService = Engine.GetService<MiniGameService>();
+            _miniGameService.UnLoadMiniGame();
+        }
+
+        private void Back()
+        {
+            MiniGameService _miniGameService = Engine.GetService<MiniGameService>();
+            _miniGameService.UnLoadMiniGame();
         }
 
         /// <summary>

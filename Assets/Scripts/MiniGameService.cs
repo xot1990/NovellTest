@@ -1,58 +1,55 @@
-using Naninovel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[InitializeAtRuntime]
-public class MiniGameService : IEngineService
+namespace Naninovel
 {
-    private readonly InputManager inputManager;
-    private readonly ScriptPlayer scriptPlayer;
-    private readonly CustomVariableManager customVariableManager;
-
-    public MiniGameService(InputManager inputManager, ScriptPlayer scriptPlayer, CustomVariableManager customVariableManager)
+    [InitializeAtRuntime]
+    public class MiniGameService : IEngineService
     {
-        this.inputManager = inputManager;
-        this.scriptPlayer = scriptPlayer;
-        this.customVariableManager = customVariableManager;
-    }
+        private readonly InputManager inputManager;
+        private readonly ScriptPlayer scriptPlayer;
+        private readonly CustomVariableManager customVariableManager;
 
-    public UniTask InitializeServiceAsync()
-    {
-        Debug.Log(inputManager.ProcessInput);
-        Debug.Log(scriptPlayer.PlayedScript);
-        return UniTask.CompletedTask;
-    }
+        public MiniGameService(InputManager inputManager, ScriptPlayer scriptPlayer,
+            CustomVariableManager customVariableManager)
+        {
+            this.inputManager = inputManager;
+            this.scriptPlayer = scriptPlayer;
+            this.customVariableManager = customVariableManager;
+        }
 
-    public async void LoadMiniGame()
-    {
-        var player = Engine.GetService<IScriptPlayer>();
+        public UniTask InitializeServiceAsync()
+        {
+            Debug.Log(inputManager.ProcessInput);
+            Debug.Log(scriptPlayer.PlayedScript);
+            return UniTask.CompletedTask;
+        }
 
-        player.PreloadAndPlayAsync("RunMiniGame").Forget();
-        await SceneManager.LoadSceneAsync("MiniGame");
-    }
+        public async void LoadMiniGame()
+        {
+            var player = Engine.GetService<IScriptPlayer>();
 
-    public async void UnLoadMiniGame()
-    {
-        var player = Engine.GetService<IScriptPlayer>();
-        
-        await SceneManager.LoadSceneAsync("Game");
-        player.PreloadAndPlayAsync("EndMiniGame").Forget();
-    }
+            player.PreloadAndPlayAsync("RunMiniGame").Forget();
+            await SceneManager.LoadSceneAsync("MiniGame");
+        }
 
-    public void SetGameResault(string variable, string value)
-    {
-        if (customVariableManager.VariableExists(variable))
-            customVariableManager.SetVariableValue(variable, value);
-        else Debug.Log("Variable " + variable + " dont exist");
-    }
+        public async void UnLoadMiniGame()
+        {
+            var player = Engine.GetService<IScriptPlayer>();
 
-    public void ResetService()
-    {
-        
-    }
+            await SceneManager.LoadSceneAsync("Game");
+            player.PreloadAndPlayAsync("EndMiniGame").Forget();
+        }
 
-    public void DestroyService()
-    {
-        
+
+        public void ResetService()
+        {
+
+        }
+
+        public void DestroyService()
+        {
+
+        }
     }
 }

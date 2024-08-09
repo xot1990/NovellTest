@@ -1,0 +1,11 @@
+
+@set G_CurrentScript="Traktir"
+@goto HideMap
+# Continue
+@back Traktir time:0
+@if !Pasta
+@showUI PastaGame
+@else
+@hideUI PastaGame
+@endIf
+@stop
